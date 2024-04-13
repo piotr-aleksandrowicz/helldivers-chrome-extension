@@ -1,0 +1,20 @@
+export default {
+  timeToBeat: 300,
+  timeBonus: 50,
+  successTexts: [
+    "HOW'D YOU LIKE THE TASTE OF FREEDOM",
+    'FOR PROSPERITY',
+    'FREEDOM NEVER SLEEPS',
+    "FREEDOM FOREVER",
+    "HOW ABOUT NICE CUP OF LIBER TEA",
+    "SAY HELLO TO DEMOCRACY",
+    "HAHAHAHAHA HAHAHAHAHA",
+    "FEELS GOOD"
+  ],
+  failureTexts: [
+    "SWEET LIBERTY, MY ARM",
+    "CAN'T LIBERATE WITH THIS BROKEN ARM",
+    "I NEED STIMS",
+    "NO PAIN NO FREEDOM",
+  ]
+}

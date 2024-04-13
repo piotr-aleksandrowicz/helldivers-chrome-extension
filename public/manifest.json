@@ -1,0 +1,13 @@
+{
+  "name": "Helldivers Training Manual",
+  "version": "0.1",
+  "manifest_version": 3,
+  "permissions": ["sidePanel", "storage"],
+  "side_panel": {
+    "default_path": "./index.html"
+  },
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}

@@ -1,0 +1,132 @@
+header {
+  margin-top: 20%;
+  font-size: 25px;
+  padding: 20px;
+  font-family: Jockey One, monospace;
+  color: #fde802;
+}
+
+body {
+  margin: 0;
+  background: #2A2B2A;
+  color: #F8F4E3;
+  font-family: Jockey One, monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  font-size: 20px;
+}
+
+.tips {
+  margin-top: 100px;
+  font-size: 11px;
+  color: #fde802;
+}
+
+.stratagemDropown{
+  position: absolute;
+  left: -5px;
+  transform: translateY(59%);
+  padding: .75rem;
+  width: 83%;
+  min-width: 10rem;
+  max-height: 20rem;
+  border: 5px solid #4e4e4e;
+  background: #1e1e1e;
+  overflow-y: auto;
+  z-index: 10;
+  scrollbar-width: thin;
+  scrollbar-color: #2b2b2b #111;
+  margin-left: 6%;
+}
+
+.stratagemDropown.closed {
+  display: none;
+}
+
+.stratagemButton {
+  margin-bottom: 20px;
+  border: 5px solid #4e4e4e;
+  background: #111;
+  width: 90%;
+  min-height: 60px;
+  color: #fff;
+  font-size: 1.35rem;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .75rem;
+  margin-left: 5%;
+}
+
+.stratagemButton > img {
+  height: 2em;
+  width: auto;
+}
+
+.freedomSpeach {
+  height: 50px;
+}
+
+.progrss-bar-parent {
+  margin-top: 30px;
+  margin-left: 5%;
+  width: 90%;
+  height: 10px;
+  background-color: #000000;
+}
+
+.progress-bar {
+  float: left;
+  height: 10px;
+  background-color: #fde802;
+}
+
+.selectGameMode {
+  margin-bottom: 10px;
+  border: 5px solid #4e4e4e;
+  background: #111;
+  width: 90%;
+  min-height: 60px;
+  color: #fff;
+  font-size: 1.35rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.stratagemOption {
+  appearance: none;
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  width: 100%;
+  border: 0;
+  background: transparent;
+  color: #fff;
+  font-size: 1.25rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.stratagemOption > img {
+  height: 2em;
+  width: auto;
+}
+
+.arrow {
+  margin: 5px;
+}
+
+.arrowDown {
+  transform: rotate(90deg);
+}
+
+.arrowUp {
+  transform: rotate(270deg);
+}
+
+.arrowLeft {
+  transform: rotate(180deg);
+}
