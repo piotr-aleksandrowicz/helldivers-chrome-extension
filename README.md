@@ -1,0 +1,1 @@
+# helldivers-chrome-extension
