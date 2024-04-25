@@ -3,8 +3,6 @@ import React, { useState } from 'react';
 import StratagemsGame from './stragem/stratagemsGame';
 import { parseGameMode } from  './stragem/helpers';
 
-import './App.css';
-
 function App() {
   const [currentGame, setCurrentGame] = useState('selected');
 
