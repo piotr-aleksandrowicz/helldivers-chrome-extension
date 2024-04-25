@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import { availableStratagems } from './avaliableStratgems';
+import { availableStratagems, groupedStratagems, stratagemTypes } from './avaliableStratgems';
 import {
   useKeyPress,
   pickArrow,
@@ -129,7 +129,7 @@ function StratagemsGame(props) {
         if(randomMode) {
           setStratgem(randomStratagem());
           startTimer();
-          setTimeToBeat(timeToBeat + config.timeBonus + ( stratgem.arrows.length * 10 ));
+          setTimeToBeat(timeToBeat + config.timeBonus + ( stratgem.arrows.length * 10 ) + ( combo * 0.9 ));
           setCombo(combo + 1);
         } else {
           resetArrows()
@@ -203,8 +203,15 @@ function StratagemsGame(props) {
         { stratgem.label }
         <div className={ dropdownOpen && !randomMode ? 'stratagemDropown open' : 'stratagemDropown closed' }>
           {dropdownOpen && !randomMode ? (
-            availableStratagems.map(s => (
-              <button key={s.value} className='stratagemOption' onClick={ () => { selectStratagem(s.value)} }>{<img src={s.logo}/>}{s.label}</button>
+            stratagemTypes.map(type => (
+              <div className='stratagemGroup' key={type.value}>
+                <span>{type.label}</span>
+                {groupedStratagems[type.value].map(s => (
+                  <div key={s.value}>
+                    <button key={s.value} className='stratagemOption' onClick={ () => { selectStratagem(s.value)} }>{<img src={s.logo}/>}{s.label}</button>
+                  </div>
+                ))}
+              </div>
             ))
           ) : null}
         </div>

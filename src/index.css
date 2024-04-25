@@ -1,5 +1,7 @@
+html, body {margin: 0; height: 100%; overflow: hidden}
+
 header {
-  margin-top: 20%;
+  margin-top: 15vh;
   font-size: 25px;
   padding: 20px;
   font-family: Jockey One, monospace;
@@ -42,6 +44,12 @@ body {
 
 .stratagemDropown.closed {
   display: none;
+}
+
+.stratagemGroup span{
+  float: left;
+  margin: 10px;
+  font-size: 25px;
 }
 
 .stratagemButton {
